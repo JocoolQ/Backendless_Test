@@ -1,0 +1,294 @@
+{
+  "serverURL": "https://api.backendless.com",
+  "filesURL": "https://backendlessappcontent.com",
+  "appId": "A409DFEA-6B6F-3E60-FF10-6A63BFA00E00",
+  "apiKey": "A76250D4-AC76-43E6-8CB1-5F4EE59D3C27",
+  "libraryPath": "../../library",
+  "settings": {
+    "googleApiKey": "AIzaSyBoqqzZsxwgR58zUw8Kz0dAYRd1CbBs8J0"
+  },
+  "hasPagesJSON": true,
+  "mainPage": "chat",
+  "isFunctionsMigrated": true,
+  "publishedPath": "web/backendless_test",
+  "pages": {
+    "404": {
+      "label": "Not Found Page",
+      "style": {
+        "padding": "20px 20px 20px 20px",
+        "background-color": "#dfdfdf"
+      },
+      "usedComponentTypes": [
+        "block",
+        "text",
+        "button"
+      ],
+      "components": {
+        "page": {
+          "type": "page",
+          "handlers": {}
+        },
+        "902c9641de4ec9e73427e7192a118d14": {
+          "id": "Button - 1",
+          "type": "button",
+          "handlers": {
+            "onClick": {
+              "dependencies": []
+            }
+          }
+        }
+      },
+      "dataBinding": {},
+      "attrs": {},
+      "html": "<div data-module-type=\"block\" data-display=\"true\" id=\"Workspace\" data-uid=\"79f3de53374df525001171999fb51b16\" style=\"display:flex;flex-shrink:1;flex-direction:column;padding:20px 20px 20px 20px;overflow:auto;max-width:450px;margin:auto auto auto auto;width:100%;\"><div data-module-type=\"block\" data-display=\"true\" id=\"Block - 1\" data-uid=\"63555b2fa0397fc596b3344a80b38d76\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-width:100px;\"><span data-module-type=\"text\" data-display=\"true\" id=\"Title\" data-uid=\"32dc00772d9b12efd3798db860d6be75\" style=\"align-self:center;font-size:46px;font-weight:700;color:#afafaf;\">404</span></div><div data-module-type=\"block\" data-display=\"true\" id=\"Block - 2\" data-uid=\"cd745c04fc382c839f78e12dd818b8b6\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-width:100px;\"><span data-module-type=\"text\" data-display=\"true\" id=\"Text - 1\" data-uid=\"6aaab972d9533413f1c12d2c2a42d272\" style=\"align-self:center;font-size:26px;font-weight:700;color:#afafaf;\">Page Not Found</span></div><button data-label=\"Go To Main Page\" data-module-type=\"button\" data-raised=\"true\" data-display=\"true\" id=\"Button - 1\" data-uid=\"902c9641de4ec9e73427e7192a118d14\" data-variant=\"contained\" style=\"background-color:#1f72e3;margin:20px 20px 20px 20px;\"></button></div>"
+    },
+    "chat": {
+      "style": {
+        "background-color": "#0f1129",
+        "padding": "10px 0 10px 0"
+      },
+      "components": {
+        "page": {
+          "type": "page",
+          "handlers": {
+            "onEnter": {
+              "dependencies": [
+                "./functions/71c90b7681f2c8b9eb72624de9567aa7/code.js",
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        },
+        "222914427ab8caf9ccb26d9331f9ea99": {
+          "id": "Send Message Form",
+          "type": "form",
+          "handlers": {
+            "onSubmit": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        },
+        "d0292826e5d48b277e8221d63f75b556": {
+          "id": "Username Label",
+          "type": "text",
+          "handlers": {
+            "onContentAssignment": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        },
+        "27aa0363fcadd775649ca32eccead29e": {
+          "id": "Map1",
+          "type": "google-map",
+          "handlers": {
+            "onPointsAssignment": {
+              "dependencies": []
+            }
+          }
+        },
+        "73712c1793d263f9c8dcdfd451233039": {
+          "id": "Logout Button",
+          "type": "button",
+          "handlers": {
+            "onClick": {
+              "dependencies": []
+            }
+          }
+        },
+        "cb8a6da6ad05d1735f21d545ec2bbd19": {
+          "id": "Workspace",
+          "type": "block",
+          "handlers": {
+            "onBeforeMount": {
+              "dependencies": []
+            },
+            "onBeforeUnmount": {
+              "dependencies": []
+            }
+          }
+        },
+        "db8e872ab8c674ae309410e4a91151d6": {
+          "id": "Spinner Panel",
+          "type": "block",
+          "handlers": {
+            "onDisplayAssignment": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        },
+        "67fe6e96b05c9bde0a5d63a9ac7825c1": {
+          "id": "Users List",
+          "type": "block",
+          "handlers": {}
+        },
+        "0361d15231333a8ce8a69a336a98aba1": {
+          "id": "Users Panel",
+          "type": "block",
+          "handlers": {
+            "onBeforeMount": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            },
+            "onBeforeUnmount": {
+              "dependencies": []
+            }
+          }
+        },
+        "4ce227124015185deb189bf933a33926": {
+          "id": "User Status Label",
+          "type": "text",
+          "handlers": {
+            "onContentAssignment": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            },
+            "onDisplayAssignment": {
+              "dependencies": []
+            }
+          }
+        },
+        "1573ed51a976fec22559f974b9bc9d4d": {
+          "id": "Messages List",
+          "type": "block",
+          "handlers": {
+            "onListItemsAssignment": {
+              "dependencies": [],
+              "invalid": true
+            },
+            "onDynamicItemsAssignment": {
+              "dependencies": []
+            }
+          }
+        },
+        "4b759b87cd111534fad9f19ab3a350ad": {
+          "id": "UsernameLabel",
+          "type": "text",
+          "handlers": {
+            "onContentAssignment": {
+              "dependencies": []
+            }
+          }
+        },
+        "95af91783da5053a184c19ada36ab7b2": {
+          "id": "User Item",
+          "type": "block",
+          "handlers": {}
+        },
+        "cf1749e3be6e3fcf0c1585f52da63d5f": {
+          "id": "New Message Input",
+          "type": "input",
+          "handlers": {
+            "onChange": {
+              "dependencies": []
+            }
+          }
+        },
+        "3aed9c98df6f4d3f76466c26cdbbefd4": {
+          "id": "WorkspaceWrapper",
+          "type": "block",
+          "handlers": {
+            "onDisplayAssignment": {
+              "dependencies": [
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        }
+      },
+      "usedComponentTypes": [
+        "block",
+        "image",
+        "text",
+        "button",
+        "spinner",
+        "layout-container",
+        "layout-row",
+        "layout-cell",
+        "google-map",
+        "form",
+        "input"
+      ],
+      "dataBinding": {},
+      "attrs": {},
+      "html": "<div data-module-type=\"block\" data-display=\"true\" id=\"Header\" data-uid=\"4d7a208c0fa14c1b3f1b6971f8f31204\" style=\"display:flex;flex-shrink:0;padding:0 10px 0 10px;flex-direction:row;justify-content:space-between;\"><img src=\"\" data-module-type=\"image\" data-display=\"true\" data-url=\"/iconlogo.svg\" data-uid=\"1ea953470ac802ff95e91e7628d8927c\" id=\"App Logo\" style=\"width:40px;\"/><span data-module-type=\"text\" data-display=\"true\" data-uid=\"28ad7dbcb59aec92f3a1145429c4451a\" id=\"App Title\" style=\"color:#fff;font-size:26px;align-self:center;margin:0 auto 0 10px;\">GEO Chat</span><div data-module-type=\"block\" data-display=\"true\" data-uid=\"5d41e63e902d634148ba71df6ffaa15f\" id=\"Block2\" style=\"display:flex;flex-shrink:0;padding:0 10px 0 10px;min-width:100px;align-items:center;flex-direction:row;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"d2db7a6b13d48147fa58f517649347ed\" id=\"Text4\" style=\"color:#fff;font-size:14px;\">Hi,</span><span data-module-type=\"text\" data-display=\"true\" data-uid=\"d0292826e5d48b277e8221d63f75b556\" id=\"Username Label\" style=\"color:#fff;margin:0 0 0 5px;font-size:14px;\">userName</span><button data-label=\"log out\" data-module-type=\"button\" data-display=\"true\" data-uid=\"73712c1793d263f9c8dcdfd451233039\" id=\"Logout Button\" data-variant=\"contained\" style=\"margin:0 0 0 10px;color:#2d9bea;\"></button></div></div><div data-module-type=\"block\" data-display=\"true\" id=\"Spinner Panel\" data-uid=\"db8e872ab8c674ae309410e4a91151d6\" style=\"flex-shrink:0;padding:10px;min-height:50px;justify-content:space-around;flex-direction:column;align-items:center;margin:20px 0 0 0;display:flex;flex-grow:1;\"><div data-module-type=\"block\" data-display=\"true\" data-uid=\"04ad582d054e5d66c991b73fcd79ec4e\" id=\"Block1\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-height:50px;align-items:center;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"894f68a84cc435ad81fe14247da695a7\" id=\"Text1\" style=\"color:#fff;\">Please wait for a while</span><span data-module-type=\"text\" data-display=\"true\" data-uid=\"ac57da840f954e940ea90f5289286377\" id=\"Text2\" style=\"color:#fff;\">detecting your GEO location...</span><svg data-module-type=\"spinner\" data-display=\"true\" data-uid=\"0327d4bdd91cd187c53b7df2ec1e9654\" id=\"Spinner1\" class=\"base-spinner\" style=\"color:rgb(255, 212, 166);margin:10px 0 0 0;\"></svg></div></div><div data-module-type=\"block\" data-display=\"false\" id=\"WorkspaceWrapper\" data-uid=\"3aed9c98df6f4d3f76466c26cdbbefd4\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-height:100px;min-width:100px;flex-basis:auto%;border-radius:0 0 0 0;flex-grow:1;\"><div data-module-type=\"block\" data-display=\"true\" id=\"Workspace\" data-uid=\"cb8a6da6ad05d1735f21d545ec2bbd19\" data-data-container=\"true\" style=\"flex-shrink:0;flex-direction:column;padding:0 0 0 0;min-height:50px;flex-grow:1;display:flex;\"><div data-module-type=\"layout-container\" data-display=\"true\" id=\"Container1\" data-uid=\"ead7b613fe5866528a0cacb91d3a8822\" style=\"width:100%;min-height:50px;flex-shrink:0;flex-grow:1;\"><div data-module-type=\"layout-row\" data-display=\"true\" id=\"Row1\" data-uid=\"6a6e884576bbca377a7d77a334ae121b\" style=\"min-height:50px;height:100%;\"><div data-module-type=\"layout-cell\" data-display=\"true\" id=\"Cell1\" data-uid=\"2fa8dfff144be687f27ef61d87f9ffc6\" data-size-tablet=\"3\" data-size-desktop=\"3\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:0 0 0 0;min-height:100px;\"><div data-module-type=\"block\" data-display=\"true\" data-data-container=\"true\" data-uid=\"0361d15231333a8ce8a69a336a98aba1\" id=\"Users Panel\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:5px 10px 10px 10px;min-height:150px;flex-grow:1;margin:0 0 0 0;background-color:#fff;border-radius:4px 4px 4px 4px;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"2cd47af50f7ab4246c05affaf0a76f0c\" id=\"Users Panel Title\" style=\"color:#000;margin:0 0 10px 0;font-size:18px;\">Users:</span><div data-module-type=\"block\" data-dynamic-list-behaviour=\"true\" data-display=\"true\" data-uid=\"67fe6e96b05c9bde0a5d63a9ac7825c1\" data-binding_onlistitemsassignment=\"users\" data-dynamic-item-key=\"objectId\" id=\"Users List\" data-binding_ondynamicitemsassignment=\"users\" style=\"display:flex;flex-shrink:0;flex-direction:column;flex-grow:1;min-height:50px;padding-bottom:10px;overflow:auto;position:relative;flex-basis:0;\"><div data-module-type=\"block\" data-data-container=\"false\" data-display=\"true\" id=\"User Item\" data-uid=\"95af91783da5053a184c19ada36ab7b2\" style=\"display:flex;flex-shrink:0;flex-direction:row;padding:5px 5px 5px 5px;margin-top:10px;margin:0 0 5px 0;justify-content:space-between;align-items:center;background-color:#fbfbfb;\"><span data-module-type=\"text\" data-display=\"true\" data-binding_oncontentassignment=\"username\" data-uid=\"e3c9235f54de5d0956315fd2b8e33a13\" style=\"font-size:12px;\">name</span><img data-module-type=\"image\" data-display=\"false\" data-binding_ondisplayassignment=\"isTyping\" data-url=\"/spinner.gif\" data-uid=\"a389e413a474856965f5d07b33fbfbf6\" style=\"border-radius:10px 10px 10px 10px;overflow:hidden;margin:0 0 0 auto;height:18px;\"/><span data-module-type=\"text\" data-display=\"true\" id=\"User Status Label\" data-uid=\"4ce227124015185deb189bf933a33926\" style=\"font-size:12px;\">offline</span></div></div></div></div><div data-module-type=\"layout-cell\" data-display=\"true\" id=\"Cell2\" data-uid=\"4ae6159dd09d1d7471ac94e3e1d3a6df\" data-size-tablet=\"5\" data-size-desktop=\"6\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:0 0 0 0;min-height:100px;\"><div data-module-type=\"google-map\" data-display=\"true\" data-map-type=\"roadmap\" data-map-center=\"{&quot;lat&quot;:45.15753535705608,&quot;lng&quot;:-17.84528414837473}\" data-map-zoom=\"2\" data-google-api-key=\"AIzaSyBoqqzZsxwgR58zUw8Kz0dAYRd1CbBs8J0\" data-uid=\"27aa0363fcadd775649ca32eccead29e\" id=\"Map1\" data-map-points=\"[{&quot;lat&quot;:0,&quot;lng&quot;:0}]\" style=\"display:flex;flex-grow:1;min-height:300px;padding:5px;margin:0 0 0 0;box-shadow:0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);border-radius:4px;background-color:#fff;\"></div></div><div data-module-type=\"layout-cell\" data-display=\"true\" id=\"Cell3\" data-uid=\"dee70404678e8b15cf9a3b08bfba8d34\" data-size-tablet=\"8\" data-size-desktop=\"3\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:0 0 0 0;min-height:100px;\"><div data-module-type=\"block\" data-display=\"true\" data-uid=\"0aef21ef44e2220ecefafa198fc9897a\" id=\"Messages Panel\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:5px 10px 10px 10px;min-height:50px;flex-grow:1;margin:0 0 0 0;background-color:#fff;border-radius:4px 4px 4px 4px;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"c0414eab04990544260dbb537c58895b\" id=\"Messages Panel Title\" style=\"color:#000;margin:0 0 10px 0;font-size:18px;\">Messages:</span><div data-module-type=\"block\" data-dynamic-list-behaviour=\"true\" data-display=\"true\" data-uid=\"1573ed51a976fec22559f974b9bc9d4d\" id=\"Messages List\" style=\"flex-shrink:1;flex-direction:column;flex-grow:1;min-height:50px;padding-bottom:10px;display:flex;overflow:auto;position:relative;flex-basis:0;\"><div data-module-type=\"block\" data-data-container=\"false\" data-display=\"true\" id=\"Message Item\" data-uid=\"f0310d9161a1f45c7c4a6bc537c273a2\" style=\"display:flex;flex-shrink:0;padding:5px 5px 5px 5px;margin-top:10px;margin:0 0 5px 0;flex-direction:column;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"4b759b87cd111534fad9f19ab3a350ad\" id=\"UsernameLabel\" style=\"font-size:12px;margin:0 0  0;font-weight:700;\">username:</span><div data-module-type=\"block\" data-display=\"true\" data-uid=\"7cdef57af2725cb6e7ef56c4a3c5e67a\" id=\"Message Block\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:5px 5px 5px 5px;min-height:20px;border:0  #cacaca;border-radius:2px 2px 2px 2px;background-color:#f4f4f4;flex-grow:1;margin:0 0 0 0;\"><span data-module-type=\"text\" data-display=\"true\" data-binding_oncontentassignment=\"message\" data-uid=\"2ceaaa04b10d3aff480cb6db535f8287\" id=\"Message Text\" style=\"font-size:12px;\">message</span></div></div></div></div></div></div></div><form data-module-type=\"form\" data-display=\"true\" data-uid=\"222914427ab8caf9ccb26d9331f9ea99\" id=\"Send Message Form\" style=\"display:flex;flex-shrink:0;flex-direction:row;padding:0 10px 0 10px;margin-top:10px;margin:0 0 0 0;align-items:center;min-height:0;\"><div data-module-type=\"input\" type=\"text\" name=\"\" placeholder=\"\" data-label=\"\" data-display=\"true\" data-binding_onvalueassignment=\"message\" data-placeholder=\"type your message and send\" data-value=\"\" data-uid=\"cf1749e3be6e3fcf0c1585f52da63d5f\" id=\"New Message Input\" style=\"flex-grow:1;font-size:14px;background-color:#ffffff;\"></div><button data-label=\"Send\" data-module-type=\"button\" data-display=\"true\" data-raised=\"true\" data-uid=\"e371ba61eb4c411731d9fbbd8735e9fb\" data-variant=\"contained\" type=\"submit\" style=\"margin:0 0 0 10px;background-color:#1a9399;\"></button></form></div></div>"
+    },
+    "landing": {
+      "style": {
+        "background-color": "#0f1129"
+      },
+      "components": {
+        "page": {
+          "type": "page",
+          "handlers": {
+            "onEnter": {
+              "dependencies": [
+                "./functions/71c90b7681f2c8b9eb72624de9567aa7/code.js",
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        }
+      },
+      "usedComponentTypes": [
+        "block",
+        "spinner"
+      ],
+      "html": "<div data-module-type=\"block\" data-display=\"true\" data-uid=\"066f7d66e7824961031938e9923332f9\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-height:50px;margin:auto auto auto auto;min-width:50px;\"><svg data-module-type=\"spinner\" data-display=\"true\" data-uid=\"3021fbe3e2b56ab62dbe0f1438082623\" class=\"base-spinner\" style=\"color:#fbfbfb;\"></svg></div>"
+    },
+    "login": {
+      "style": {
+        "background-color": "#0f1129"
+      },
+      "components": {
+        "page": {
+          "type": "page",
+          "handlers": {
+            "onEnter": {
+              "dependencies": [
+                "./functions/71c90b7681f2c8b9eb72624de9567aa7/code.js",
+                "./functions/c4e97af1f13356084877663da10b7363/code.js"
+              ]
+            }
+          }
+        },
+        "e13c78778b412de8d2c2d4ad9f421133": {
+          "id": "Login Form",
+          "type": "form",
+          "handlers": {
+            "onSubmit": {
+              "dependencies": []
+            },
+            "onBeforeMount": {
+              "dependencies": []
+            }
+          }
+        },
+        "359e942fb9f2d5df44939e52ea244ac3": {
+          "id": "Login Button",
+          "type": "button",
+          "handlers": {}
+        }
+      },
+      "usedComponentTypes": [
+        "block",
+        "image",
+        "form",
+        "text",
+        "input",
+        "switch",
+        "button"
+      ],
+      "dataBinding": {},
+      "attrs": {},
+      "html": "<div data-module-type=\"block\" data-display=\"true\" data-uid=\"2ea3251d2051dccceddee13fe1e70423\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;margin:auto auto auto auto;width:400px;min-width:250px;\"><img data-module-type=\"image\" data-display=\"true\" data-url=\"/logo.svg\" data-uid=\"f7bf916476b23add37dcfa0ba0280a95\" style=\"width:200px;align-self:center;margin:0 0 20px 0;\"/><form data-module-type=\"form\" data-display=\"true\" data-uid=\"e13c78778b412de8d2c2d4ad9f421133\" id=\"Login Form\" style=\"display:flex;flex-shrink:0;min-height:50px;padding:20px 20px 20px 20px;margin-top:10px;flex-direction:column;background-color:#fff;border-radius:4px 4px 4px 4px;margin:0 0 16px 0;\"><span data-module-type=\"text\" data-display=\"true\" data-uid=\"715a11ee0659891829f72c09cb25e493\" style=\"align-self:center;font-size:26px;font-weight:700;margin:0 0 30px 0;\">GEO Chat Application</span><div data-module-type=\"block\" data-display=\"false\" data-data-container=\"false\" data-binding_ondisplayassignment=\"error\" data-uid=\"ccb7a1ce62db7fd922e4b6b8ebdddf92\" id=\"Alert\" style=\"display:flex;flex-shrink:0;flex-direction:column;padding:10px;min-height:50px;margin:0 0 20px 0;justify-content:center;background-color:#ec6464;border:1px solid #922626;align-items:stretch;\"><span data-module-type=\"text\" data-display=\"true\" data-binding_oncontentassignment=\"error.message\" data-uid=\"be9d62db53b1e34677fde22edf7f59e4\" id=\"AlertMessage\" style=\"color:#ffffff;font-size:12px;text-align:center;\">Error Message</span></div><div data-module-type=\"input\" type=\"text\" name=\"\" placeholder=\"\" data-label=\"Username\" data-display=\"true\" data-placeholder=\"\" data-binding_onvalueassignment=\"username\" data-required=\"true\" data-uid=\"95c516cae2fdfaae97edd25eb765aeda\" id=\"UsernameInput\" data-variant=\"outlined\" style=\"margin:0 0 0 0;\"></div><div data-module-type=\"input\" type=\"text\" name=\"\" placeholder=\"\" data-label=\"Password\" data-display=\"true\" data-required=\"true\" data-placeholder=\"\" data-binding_onvalueassignment=\"password\" data-type=\"password\" data-uid=\"bbdcdef8488821ebbc5882ce1c5cacc5\" id=\"PasswordInput\" data-variant=\"outlined\" style=\"margin:20px 0 0 0;\"></div><div data-module-type=\"block\" data-display=\"true\" data-uid=\"cf94f1cae1d72c36246e41e54e4b86c5\" style=\"display:flex;flex-shrink:0;padding:0 10px 0 10px;margin:15px 0 0 0;flex-direction:row;align-items:center;\"><div data-module-type=\"switch\" data-display=\"true\" data-binding_oncheckedstateassignment=\"stayLoggedIn\" data-checked=\"true\" data-uid=\"d599671c720e0a7c7b4aca989fdb6781\" id=\"RememberMeSwitch\"></div><span data-module-type=\"text\" data-display=\"true\" data-uid=\"e5257606a8271bfcd554bf9651cc6cbd\" style=\"margin:0 0 0 10px;font-size:13px;color:#333;\">remember me</span></div><button data-label=\"Log In\" data-module-type=\"button\" data-display=\"true\" data-unelevated=\"false\" data-dense=\"false\" data-raised=\"false\" data-uid=\"359e942fb9f2d5df44939e52ea244ac3\" id=\"Login Button\" data-disabled=\"false\" data-variant=\"outlined\" type=\"submit\" style=\"margin:30px 0 0 0;color:#2581ed;\"></button></form></div>"
+    }
+  }
+}
